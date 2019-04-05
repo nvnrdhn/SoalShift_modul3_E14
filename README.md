@@ -51,8 +51,11 @@ Langkah pertama membuat koneksi dengan server pembeli di port 8081. Selama serve
 
 # soal3
 
+Pada soal ini dibuat dua thread, yaitu untuk Agmal, dan untuk Iraj. Kemudian lakukan looping untuk scan sesuai dengan fittur yang ada ( variable scan digunakan supaya bisa terus menerus dilakukan scan),lalu status sendiri terdiri atas dua, yaitu satu untuk melakukan perintah "Agmal Ayo Bangun", dan 2 untuk "Iraj Ayo Tidur". Kemudian setiap penambahan atau pengurangan pada wakup dan spirit status, terdapat masing-masing counter. Jika counter sudah mencapai tiga, maka dilakukan sleep. Namun dalam kode ini masih terdapat kesalahan yaitu ketika dijumlahkan atau dikurangkan, hasilnya menjadi tiga kali lipatnya. (Misal hanya ditambah 15, namun menjadi 30)
+
 # soal4
 
+Pada soal ini dibuat tiga thread, yaitu untuk zip, unzip, dan membuat teks. Pada thread teks, terdapat array untuk command  `ps -aux | head -11` hal ini bertujuan untuk mengambil data 10 teratas dari ps -aux. Kemudian membuat folder FolderProses sesuai indeks(1 atau 2), dan juga membuat SimpanProses[1/2] untuk menyimpan hasil command. Kemudian pada thread zip, bertujuan untuk mengkompres file, dan pada unzip untuk mengekstraknya kembali. 
 # soal5
 
 # game
