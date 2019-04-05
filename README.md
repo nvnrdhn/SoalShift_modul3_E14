@@ -1,7 +1,4 @@
-# SoalShift_modul3_E14
-
 # soal1
-
 
     for (int i = 1;i<argc;i++)
       sscanf(argv[i], "%llu", &num[i-1]);
@@ -33,3 +30,21 @@ Kemudian untuk setiap argumen yang diberikan, program akan membuat sebuah thread
     }
     
 Fungsi diatas digunakan untuk menghitung faktorial dari argumen, kemudian hasilnya disimpan di array hasil[]. Terakhir, program akan mencetak hasil dari index 0 sampai n-1.
+
+# soal2
+
+# serverjual
+
+Langkah pertama membuat variabel stok yang di share dengan server pembeli. Awalnya stok bernilai 0. Kemudian buat 2 thread: thread pertama berfungsi sebagai server, thread kedua berfungsi untuk mencetak banyak stok tiap 5 detik. Server penjual dibuka di port 8080. Limit banyak client yang terkoneksi dengan mengubah argumen fungsi listen `listen(server_fd, 1);`. Server penjual akan menangkap string yang dikirim oleh client penjual. Jika string yang ditangkap adalah string "tambah", maka tambah stok dengan 1. Jika string yang ditangkap adalah string "exit", maka server akan berhenti.
+
+# clientjual
+
+Langkah pertama membuat koneksi dengan server penjual di port 8080. Selama server berjalan, client dapat mengirim string ke server.
+ 
+# serverbeli
+
+Langkah pertama membuat variabel stok yang di share dengan server penjual. Kemudian buat server di port 8081 agar tidak bentrok dengan server penjual. Selama server berjalan, server dapat menerima string yang dikirim oleh client penjual. Jika string yang diterima adalah string "beli" dan jika stok masih ada, maka stok dikurangi 1 dan server akan mengirim respon berupa string "transaksi berhasil" ke client pembeli. Jika stok habis maka server akan mengirim respon "transaksi gagal".
+
+# clientbeli
+
+Langkah pertama membuat koneksi dengan server pembeli di port 8081. Selama server berjalan, client dapat mengirim string ke server. Jika string yang dikirim adalah string "beli", maka client akan menunggu respon dari server.
