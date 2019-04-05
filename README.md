@@ -48,3 +48,17 @@ Langkah pertama membuat variabel stok yang di share dengan server penjual. Kemud
 # clientbeli
 
 Langkah pertama membuat koneksi dengan server pembeli di port 8081. Selama server berjalan, client dapat mengirim string ke server. Jika string yang dikirim adalah string "beli", maka client akan menunggu respon dari server.
+
+# soal3
+
+# soal4
+
+# soal5
+
+# game
+
+Langkah pertama membuat variabel foodstock yang di share dengan program shop. Awalnya stok bernilai 5. Kemudian inisiasi variabel player yang berupa struct monster dengan data member: nama, health, hygiene, hunger. Inisiasi variabel enemy, awalnya memiliki health 100. Kemudian buat 3 thread: thread pertama berfungsi menampilkan menu saat ini, thread kedua berfungsi menangkap keypress sebagai input kemudian memprosesnya, thread ketiga berfungsi meng-update status (hunger, hygiene, health) dan cooldown bath, dan tidak akan berjalan ketika game sedang dalam mode battle. Program menggunakan global variabel status untuk memberitahu thread status game sekarang. Status bernilai 5 jika game sedang dalam mode standby, bernilai 3 jika sedang dalam mode battle, dan bernilai 4 jika sedang dalam mode shop.
+
+# shop
+
+Langkah pertama membuat variabel foodstock yang di share dengan program game. Kemudian buat 2 thread: thread pertama berfungsi untuk mencetak menu shop, thread kedua berfungsi untuk menangkap keypress sebagai input kemudian memprosesnya. Jika input berupa 1, maka thread akan menambah variabel stok dengan 1.
