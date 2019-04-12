@@ -10,7 +10,7 @@
 
 pthread_t tr[3];
 int status;
-char dirname[100] = "/home/camiliamay6/Dokumen/";
+char dirname[100] = "~/Documents/";
 
 void* zip(void* arg){
   int i;
